@@ -1,4 +1,3 @@
-
 node {
     properties([parameters([string(defaultValue: '127.0.0.1', description: 'Please give IP to build a site', name: 'IP', trim: true)])])
     stage("Install git"){
