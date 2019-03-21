@@ -4,7 +4,7 @@ node {
         sh "ssh    ec2-user@${IP}         sudo yum install git python-pip  -y"
     }
     stage("Clone a repo"){
-        git 'https://github.com/farrukh90/flask-examples.git'
+        git 'https://github.com/aliyaaloca/flask-examples.git'
     }
     stage("Copy files"){
         sh "scp  *   ec2-user@${IP}:/tmp/"
